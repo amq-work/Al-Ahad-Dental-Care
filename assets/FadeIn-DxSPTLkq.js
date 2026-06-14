@@ -1,1 +1,0 @@
-import{j as e,m as n}from"./index-BASB3rJ5.js";function a({children:i,delay:t=0}){return e.jsx(n.div,{initial:{opacity:0,y:40},whileInView:{opacity:1,y:0},viewport:{once:!0,margin:"-100px"},transition:{duration:.8,delay:t,ease:"easeOut"},children:i})}export{a as F};
