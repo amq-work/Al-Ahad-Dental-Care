@@ -13,15 +13,15 @@ export function FindUs() {
             </h2>
             <p className="text-gray-500 font-light leading-relaxed text-lg mb-10 max-w-md">
               Located in the heart of the city, our clinic offers a serene escape 
-              for your dental care needs. Visit us to experience luxury dentistry firsthand.
+              for your dental care needs. Visit us to experience exceptional dentistry firsthand.
             </p>
             <div className="flex items-start gap-4 mb-10">
               <MapPin className="w-6 h-6 mt-1 flex-shrink-0" />
               <div>
                 <h4 className="font-serif text-xl mb-2">Clinic Location</h4>
-                <p className="text-gray-500 font-light">
-                  123 Luxury Avenue, Suite 100<br />
-                  Beverly Hills, CA 90210
+                <p className="text-gray-500 font-light leading-relaxed">
+                  123 Dental Avenue, Suite 100<br />
+                  DHA Phase 6, Lahore
                 </p>
               </div>
             </div>

@@ -36,7 +36,7 @@ export function Expertise() {
             {services.map((service, idx) => (
               <div key={idx} className="flex flex-col">
                 {service.icon}
-                <h3 className="font-serif text-xl mb-4">{service.title}</h3>
+                <h3 className="font-sans font-semibold text-xl mb-4">{service.title}</h3>
                 <p className="text-gray-500 font-light leading-relaxed text-sm">
                   {service.desc}
                 </p>

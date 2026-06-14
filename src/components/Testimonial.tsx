@@ -12,7 +12,7 @@ const testimonials = [
     author: "Michael Roberts"
   },
   {
-    quote: "From the beautiful waiting room to the state-of-the-art equipment, everything here screams luxury and care. My veneers look perfectly natural.",
+    quote: "From the beautiful waiting room to the state-of-the-art equipment, everything here screams excellence and care. My veneers look perfectly natural.",
     author: "Sarah Jenkins"
   }
 ];

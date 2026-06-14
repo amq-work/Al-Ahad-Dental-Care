@@ -12,7 +12,7 @@ export function Hero() {
           in Lahore
         </h1>
         <p className="text-gray-400 text-lg mb-12 max-w-md font-light leading-relaxed">
-          Experience luxury dental care tailored to your unique needs. We
+          Experience dental care tailored to your unique needs. We
           combine advanced technology with editorial aesthetics to give you a perfect smile.
         </p>
         <div>
@@ -24,9 +24,9 @@ export function Hero() {
           </Button>
         </div>
       </div>
-      <div className="w-full md:w-1/2 h-[60vh] md:h-auto relative">
+      <div className="hidden md:block w-full md:w-1/2 h-[60vh] md:h-auto relative">
         <img
-          src="/assets/hero-bg.jpg"
+          src={`${import.meta.env.BASE_URL}assets/hero-bg.jpg`}
           alt="Perfect Smile"
           className="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
         />

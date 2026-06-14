@@ -9,7 +9,7 @@ const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY || '6LeIzh0tAAAAAC_MEPOE
 
 render(
   <GoogleReCaptchaProvider reCaptchaKey={siteKey}>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <App />
     </BrowserRouter>
   </GoogleReCaptchaProvider>, 

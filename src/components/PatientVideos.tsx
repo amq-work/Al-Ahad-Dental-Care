@@ -34,7 +34,7 @@ export function PatientVideos() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {videos.map((vid, idx) => (
             <div key={idx} className="group cursor-pointer">
-              <div className="relative h-[400px] overflow-hidden bg-gray-900 mb-6">
+              <div className="relative h-64 md:h-[400px] overflow-hidden bg-gray-900 mb-6">
                 <img
                   src={vid.img}
                   alt={vid.title}
@@ -46,7 +46,7 @@ export function PatientVideos() {
                   </div>
                 </div>
               </div>
-              <h3 className="font-serif text-xl mb-2">{vid.title}</h3>
+              <h3 className="font-sans font-semibold text-xl mb-2">{vid.title}</h3>
               <p className="text-gray-400 font-light text-sm">
                 Patient: {vid.name}
               </p>

@@ -38,7 +38,7 @@ export function Services() {
           <p className="text-gray-500 font-light leading-relaxed text-lg">
             At Al-Ahad Dental, we provide advanced diagnostic and preventative care 
             tailored for your long-term oral health. Experience meticulous attention 
-            to detail in a luxurious, relaxing environment.
+            to detail in a relaxing environment.
           </p>
         </div>
 
@@ -51,7 +51,7 @@ export function Services() {
               <div className="w-14 h-14 bg-stone-100 rounded-full flex items-center justify-center mb-8 group-hover:bg-black group-hover:text-white transition-colors duration-500">
                 <service.icon size={24} className="stroke-[1.5]" />
               </div>
-              <h3 className="font-serif text-xl mb-4 text-black">
+              <h3 className="font-sans font-semibold text-xl mb-4 text-black">
                 {service.title}
               </h3>
               <p className="text-gray-500 font-light text-sm leading-relaxed">

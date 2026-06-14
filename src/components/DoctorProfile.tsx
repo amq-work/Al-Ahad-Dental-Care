@@ -7,9 +7,9 @@ export function DoctorProfile() {
         <div className="flex flex-col md:flex-row-reverse gap-16 items-center">
           <div className="w-full md:w-5/12">
             <img
-              src="/assets/gallery-2.jpg"
+              src={`${import.meta.env.BASE_URL}assets/gallery-2.jpg`}
               alt="Dr. Al-Ahad"
-              className="w-full h-[550px] object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              className="w-full h-64 md:h-[550px] object-cover grayscale hover:grayscale-0 transition-all duration-700"
             />
           </div>
           <div className="w-full md:w-7/12 md:pr-10">
@@ -23,7 +23,7 @@ export function DoctorProfile() {
               With over 15 years of experience in Cosmetic Dentistry and Dental Implants, 
               Dr. Al-Ahad is dedicated to transforming smiles across Lahore, including DHA, Barki Road, and Paragon City. 
               Our clinic was founded on the principle that dental care should be 
-              a luxurious, stress-free experience.
+              a stress-free experience.
             </p>
             <p className="text-gray-500 font-light leading-relaxed text-lg mb-10">
               He combines state-of-the-art technology with an artistic eye to deliver 

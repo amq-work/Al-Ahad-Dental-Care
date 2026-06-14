@@ -39,7 +39,7 @@ export function Blog() {
               key={idx}
               className="bg-white border border-gray-200 group cursor-pointer"
             >
-              <div className="h-64 overflow-hidden">
+              <div className="h-48 md:h-64 overflow-hidden">
                 <img
                   src={post.img}
                   alt={post.title}
@@ -50,7 +50,7 @@ export function Blog() {
                 <p className="text-xs uppercase tracking-widest text-gray-400 mb-3">
                   {post.date}
                 </p>
-                <h3 className="font-serif text-xl mb-4 group-hover:text-gray-600 transition-colors">
+                <h3 className="font-sans font-semibold text-xl mb-4 group-hover:text-gray-600 transition-colors">
                   {post.title}
                 </h3>
                 <p className="text-gray-500 font-light text-sm mb-6 line-clamp-3">

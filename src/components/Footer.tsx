@@ -6,11 +6,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-24">
           <div>
             <div className="flex items-center gap-2 mb-8">
-              <img src="/assets/logo.png" alt="Al-Ahad Dental Logo" className="h-10 object-contain invert brightness-0" />
+              <img src={`${import.meta.env.BASE_URL}assets/logo.png`} alt="Al-Ahad Dental Logo" className="h-10 object-contain invert brightness-0" />
             </div>
-            <p className="text-gray-400 font-light text-sm mb-6">
-              Elevating dental care to an art form. Experience luxury,
-              precision, and comfort.
+            <p className="text-gray-400 font-light leading-relaxed mb-8">
+              Elevating dental care to an art form. Experience excellence,
+              precision, and personalized attention in the heart of Lahore.
             </p>
             <div className="flex gap-4">
               <div className="w-8 h-8 border border-gray-800 flex items-center justify-center hover:bg-white hover:text-black transition-colors cursor-pointer">
@@ -79,9 +79,9 @@ export function Footer() {
             <h4 className="font-serif text-lg mb-6">Contact Us</h4>
             <address className="text-gray-400 font-light text-sm not-italic space-y-4">
               <p>
-                123 Luxury Avenue, Suite 100
+                123 Dental Avenue, Suite 100
                 <br />
-                Beverly Hills, CA 90210
+                DHA Phase 6, Lahore
               </p>
               <p>+1 (555) 123-4567</p>
               <p>hello@alahaddental.com</p>

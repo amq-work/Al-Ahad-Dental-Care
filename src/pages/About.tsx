@@ -8,7 +8,7 @@ export function About() {
       <div className="container-custom text-center mb-16">
         <h1 className="font-serif text-5xl md:text-6xl mb-6">About Our Clinic</h1>
         <p className="text-gray-500 max-w-2xl mx-auto text-lg font-light">
-          We believe in combining advanced dental technology with luxurious editorial aesthetics 
+          We believe in combining advanced dental technology with editorial aesthetics 
           to provide an unparalleled experience in Lahore.
         </p>
       </div>

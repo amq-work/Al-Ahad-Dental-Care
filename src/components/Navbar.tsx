@@ -56,7 +56,7 @@ export function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
             <img
-              src="/assets/logo.png"
+              src={`${import.meta.env.BASE_URL}assets/logo.png`}
               alt="Al-Ahad Dental Logo"
               className="h-10 md:h-12 object-contain"
             />
@@ -108,7 +108,7 @@ export function Navbar() {
             <div className="p-6 md:p-8 flex items-center justify-between border-b border-black/5">
               <Link to="/" onClick={() => setMobileMenuOpen(false)}>
                 <img
-                  src="/assets/logo.png"
+                  src={`${import.meta.env.BASE_URL}assets/logo.png`}
                   alt="Al-Ahad Dental Logo"
                   className="h-8 object-contain"
                 />

@@ -150,8 +150,8 @@ export function Appointment() {
       </div>
       <div className="w-full md:w-1/2 h-[60vh] md:h-auto">
         <img
-          src="/assets/gallery-4.jpg"
-          alt="Luxury Dental Clinic in DHA Lahore"
+          src={`${import.meta.env.BASE_URL}assets/gallery-4.jpg`}
+          alt="Dental Clinic in DHA Lahore"
           className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
         />
       </div>

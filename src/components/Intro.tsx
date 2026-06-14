@@ -7,7 +7,7 @@ export function Intro() {
         <div className="flex flex-col md:flex-row gap-16 md:gap-24 items-center">
           <div className="w-full md:w-1/2">
             <img
-              src="/assets/gallery-1.jpg"
+              src={`${import.meta.env.BASE_URL}assets/gallery-1.jpg`}
               alt="Dental Practice"
               className="w-full h-[600px] object-cover grayscale hover:grayscale-0 transition-all duration-700"
             />
