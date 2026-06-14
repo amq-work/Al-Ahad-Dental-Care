@@ -92,7 +92,7 @@ export function Footer() {
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 uppercase tracking-widest">
           <p>
             &copy; {new Date().getFullYear()} Al-Ahad Dental Care. All rights
-            reserved.
+            reserved. <span className="ml-2 border-l border-gray-700 pl-2">Designed by Digital Nexes</span>
           </p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">
