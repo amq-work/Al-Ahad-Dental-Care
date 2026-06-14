@@ -5,11 +5,11 @@ export function Intro() {
     <section id="about" className="section-padding bg-white">
       <div className="container-custom">
         <div className="flex flex-col md:flex-row gap-16 md:gap-24 items-center">
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:w-1/2 overflow-hidden">
             <img
               src={`${import.meta.env.BASE_URL}assets/gallery-1.jpg`}
               alt="Dental Practice"
-              className="w-full h-[600px] object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              className="w-full h-[600px] object-cover grayscale hover:grayscale-0 hover:scale-105 transition-all duration-700"
             />
           </div>
           <div className="w-full md:w-1/2">

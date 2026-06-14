@@ -5,11 +5,11 @@ export function DoctorProfile() {
     <section className="section-padding bg-white border-y border-gray-200">
       <div className="container-custom">
         <div className="flex flex-col md:flex-row-reverse gap-16 items-center">
-          <div className="w-full md:w-5/12">
+          <div className="w-full md:w-5/12 overflow-hidden">
             <img
               src={`${import.meta.env.BASE_URL}assets/gallery-2.jpg`}
               alt="Dr. Al-Ahad"
-              className="w-full h-64 md:h-[550px] object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              className="w-full h-64 md:h-[550px] object-cover grayscale hover:grayscale-0 hover:scale-105 transition-all duration-700"
             />
           </div>
           <div className="w-full md:w-7/12 md:pr-10">

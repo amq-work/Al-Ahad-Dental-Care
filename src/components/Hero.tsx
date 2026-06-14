@@ -24,11 +24,11 @@ export function Hero() {
           </Button>
         </div>
       </div>
-      <div className="hidden md:block w-full md:w-1/2 h-[60vh] md:h-auto relative">
+      <div className="hidden md:block w-full md:w-1/2 h-[60vh] md:h-auto relative overflow-hidden">
         <img
           src={`${import.meta.env.BASE_URL}assets/hero-bg.jpg`}
           alt="Perfect Smile"
-          className="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+          className="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-105 transition-all duration-700"
         />
       </div>
     </section>
