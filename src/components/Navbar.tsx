@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { Button } from './ui/Button'
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const navigate = useNavigate()
+  const location = useLocation()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,16 +65,19 @@ export function Navbar() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-10 text-sm uppercase tracking-widest text-black/70 font-medium">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                to={link.href}
-                className="relative group hover:text-black transition-colors py-2"
-              >
-                {link.name}
-                <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-black transition-all duration-300 group-hover:w-full"></span>
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = location.pathname === link.href;
+              return (
+                <Link
+                  key={link.name}
+                  to={link.href}
+                  className={`relative group transition-colors py-2 ${isActive ? 'text-black' : 'hover:text-black'}`}
+                >
+                  {link.name}
+                  <span className={`absolute bottom-0 left-0 h-[1px] bg-black transition-all duration-300 ${isActive ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
+                </Link>
+              );
+            })}
           </div>
 
           {/* Desktop CTA */}
@@ -123,23 +127,26 @@ export function Navbar() {
             </div>
 
             <div className="flex-1 flex flex-col justify-center px-8 gap-8">
-              {navLinks.map((link, i) => (
-                <Link
-                  key={link.name}
-                  to={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="inline-block"
-                >
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.1 * i + 0.2, duration: 0.5 }}
-                    className="font-serif text-4xl text-black hover:text-gray-500 transition-colors"
+              {navLinks.map((link, i) => {
+                const isActive = location.pathname === link.href;
+                return (
+                  <Link
+                    key={link.name}
+                    to={link.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="inline-block"
                   >
-                    {link.name}
-                  </motion.div>
-                </Link>
-              ))}
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.1 * i + 0.2, duration: 0.5 }}
+                      className={`font-serif text-4xl transition-colors ${isActive ? 'text-black' : 'text-gray-400 hover:text-black'}`}
+                    >
+                      {link.name}
+                    </motion.div>
+                  </Link>
+                );
+              })}
             </div>
 
             <div className="p-8 pb-12 mt-auto">

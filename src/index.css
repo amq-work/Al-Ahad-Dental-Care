@@ -54,4 +54,42 @@
   .section-padding {
     @apply py-24 md:py-32;
   }
+  .blog-content {
+    @apply max-w-none text-lg text-gray-600 leading-[1.8] font-light;
+  }
+  .blog-content h2 {
+    @apply text-4xl font-normal text-black mt-16 mb-8 font-serif leading-tight;
+  }
+  .blog-content h3 {
+    @apply text-2xl font-normal text-black mt-12 mb-6 font-serif;
+  }
+  .blog-content p {
+    @apply mb-8;
+  }
+  .blog-content ul {
+    @apply mb-8 space-y-4;
+  }
+  .blog-content li {
+    @apply flex items-start text-gray-600;
+  }
+  .blog-content li::before {
+    content: "•";
+    @apply text-black mr-4 font-bold text-xl leading-none;
+  }
+  .blog-content strong {
+    @apply font-medium text-black;
+  }
+  .blog-content blockquote {
+    @apply border-l-2 border-black pl-8 my-10 italic font-serif text-2xl text-gray-800;
+  }
+  
+  .bg-dot-pattern {
+    background-color: #fafafa;
+    background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+  
+  .bg-gradient-subtle {
+    background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  }
 }
